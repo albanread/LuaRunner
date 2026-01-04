@@ -1,0 +1,22 @@
+//
+// LuaBindings.h
+// LuaRunner2 - Lua bindings for SuperTerminal API
+//
+// This file declares the Lua binding registration function.
+//
+
+#ifndef LUABINDINGS_H
+#define LUABINDINGS_H
+
+struct lua_State;
+
+namespace SuperTerminal {
+namespace LuaBindings {
+
+// Register all SuperTerminal API functions in the Lua state
+void registerBindings(lua_State* L);
+
+} // namespace LuaBindings
+} // namespace SuperTerminal
+
+#endif // LUABINDINGS_H
